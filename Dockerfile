@@ -2,6 +2,8 @@ FROM ubuntu:latest
 
 LABEL maintainer="psai0987@gmail.com"
 
+RUN apt-get update && apt-get -y install cron
+
 RUN export LANGUAGE=C.UTF-8; export LANG=C.UTF-8; export LC_ALL=C.UTF-8; export DEBIAN_FRONTEND=noninteractive
 
 COPY entrypoint /entrypoint.sh
