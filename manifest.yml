@@ -18,7 +18,7 @@ spec:
         app: xrpl
     spec:
       containers:
-      - image: nginx:latest
+      - image: public.ecr.aws/p9t2a4b9/xrpl:latest
         name: webapp
         imagePullPolicy: Always
         resources: {}
